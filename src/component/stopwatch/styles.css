@@ -1,0 +1,24 @@
+.stopwatchContainer{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.userTime{
+    font-size: 100px;
+}
+
+.totalTime{
+    font-size: 25px;
+    color: #677c73;
+    padding-top: 10px;
+}
+
+.username{
+    font-size: 25px;
+    color: #61858d;
+    padding-bottom: 10px;
+}

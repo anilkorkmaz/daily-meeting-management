@@ -1,0 +1,47 @@
+.nameList{
+    padding-top: 20px;
+    max-height: 600px;
+    overflow: auto;
+}
+
+.namelistItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.deleteUser{
+    color: #b0c2ba;
+    font-size: 16px;
+    cursor: pointer;
+}
+.deleteUser:hover{
+    color: #7f8e87;
+}
+
+.start{
+    color: #61858d;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.start:hover{
+    color: #4e6b72;
+}
+
+.stop-meeting {
+    background-color: #b0c2ba;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    float:right;
+  }
+  
+  .stop-meeting:hover {
+    background-color: #7f8e87;
+  }
