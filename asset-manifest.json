@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/daily-meeting-management/static/css/main.6f158259.css",
-    "main.js": "/daily-meeting-management/static/js/main.6b2243b2.js",
+    "main.js": "/daily-meeting-management/static/js/main.f9a3a0cc.js",
     "static/js/787.6cdeb33d.chunk.js": "/daily-meeting-management/static/js/787.6cdeb33d.chunk.js",
     "index.html": "/daily-meeting-management/index.html",
     "main.6f158259.css.map": "/daily-meeting-management/static/css/main.6f158259.css.map",
-    "main.6b2243b2.js.map": "/daily-meeting-management/static/js/main.6b2243b2.js.map",
+    "main.f9a3a0cc.js.map": "/daily-meeting-management/static/js/main.f9a3a0cc.js.map",
     "787.6cdeb33d.chunk.js.map": "/daily-meeting-management/static/js/787.6cdeb33d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6f158259.css",
-    "static/js/main.6b2243b2.js"
+    "static/js/main.f9a3a0cc.js"
   ]
 }
