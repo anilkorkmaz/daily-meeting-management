@@ -13,7 +13,7 @@ function App() {
   const [isMeetingFinished, setIsMeetingFinished] = useState(false);
   const [currentUser, setCurrentUser] = useState({ id: null });
   const [elapsedTime, setElapsedTime] = useState(0);
-  const [totalElapsedTime, setTotalElapsedTime] = useState(0);
+  const [hasAnyUser, setHasAnyUser] = useState(false);
 
   function handleAddUser(username) {
     if (username && username.trim() != "") {
@@ -65,23 +65,31 @@ function App() {
   }
 
   useEffect(() => {
-    setCompletedUsers(UserService.getAllUsers());
+    const users = UserService.getAllUsers();
+    setCompletedUsers(users);
   }, []);
+
+  useEffect(() => {
+    setHasAnyUser(UserService.getAllUsers().length>0)
+  }, [participants, completedUsers]);
 
   return (
     <div className="container">
       <div className="column left">
         <div className="participants">
           {!isMeetingStarted && <AddUserButton onClick={handleAddUser} />}
-          <Participantlist
-            users={completedUsers}
-            deleteAction={handleDeleteUser}
-            startAction={handleStartAction}
-            stopMeetingAction={handleStopMeeting}
-            isMeetingStarted={isMeetingStarted}
-            isMeetingFinished={isMeetingFinished}
-            resetMeetingAction={handleResetMeeting}
-          />
+          {hasAnyUser ?
+            <Participantlist
+              users={completedUsers}
+              deleteAction={handleDeleteUser}
+              startAction={handleStartAction}
+              stopMeetingAction={handleStopMeeting}
+              isMeetingStarted={isMeetingStarted}
+              isMeetingFinished={isMeetingFinished}
+              resetMeetingAction={handleResetMeeting}
+            />
+            : "Add users using + button"
+          }
         </div>
       </div>
       <div className="column middle">
