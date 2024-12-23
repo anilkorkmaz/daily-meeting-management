@@ -5,6 +5,7 @@ function Participantlist({
   users,
   deleteAction,
   startAction,
+  deactiveUser,
   isMeetingStarted,
   stopMeetingAction,
   isMeetingFinished,
@@ -33,8 +34,19 @@ function Participantlist({
           {isMeetingStarted ? (
             <div></div>
           ) : (
-            <div className="deleteUser" onClick={() => deleteAction(user)}>
-              ✖
+            <div className="rigtc">
+                 <div
+                className="deleteUser"
+                onClick={() => deactiveUser(user)}
+              >
+               💤     
+              </div>
+              <div
+                className="deleteUser"
+                onClick={() => deleteAction(user)}
+              >
+                ✖
+              </div>
             </div>
           )}
         </div>

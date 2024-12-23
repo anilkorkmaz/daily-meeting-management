@@ -27,6 +27,11 @@ function App() {
     setCompletedUsers(userList);
   }
 
+  function deactiveUser(user) {
+    const finalList = completedUsers.filter(u => u.id !== user.id);
+    setCompletedUsers(finalList);
+  }
+
   function handleStartAction(user) {
     setCompletedUsers(completedUsers.filter((u) => u.id !== user.id));
 
@@ -83,6 +88,7 @@ function App() {
               users={completedUsers}
               deleteAction={handleDeleteUser}
               startAction={handleStartAction}
+              deactiveUser={deactiveUser}
               stopMeetingAction={handleStopMeeting}
               isMeetingStarted={isMeetingStarted}
               isMeetingFinished={isMeetingFinished}

@@ -16,3 +16,9 @@
     color: #74706f;
 }
 
+.rigtc{
+    display: flex;
+    align-content: flex-end;
+    gap: 10px
+}
+
