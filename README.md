@@ -8,6 +8,9 @@ This application is a React project that manages daily meetings without requirin
 - The total duration is visible.
 - After a person speaks, it can determine who hasn't spoken yet in order to give them a turn.
 
+## Update 
+- Deactivate user for a session with 💤
+
 ## Test
 
 https://anilkorkmaz.github.io/daily-meeting-management
